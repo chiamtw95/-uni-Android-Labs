@@ -36,13 +36,21 @@
             android:layout_marginEnd="14dp"
             android:text="@string/false_button" />
 
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="117dp"
+            android:text="@string/next_button" />
+
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/question_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="207dp"
-            android:text="@string/question_text" />
+            android:layout_marginTop="223dp" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
