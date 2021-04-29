@@ -20,6 +20,7 @@ public class QuizActivity extends AppCompatActivity {
     private ImageButton mPreviousButton;
     private TextView mQuestionTextView;
     private int mCurrentIndex = 0;
+    private int scoreCounter = 0;
 
     private Question [] mQuestionBank = new Question[]{
             new Question(R.string.question_australia, true),
@@ -56,12 +57,14 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onClick (View v) {
                 checkAnswer(true);
+                mTrueButton.setEnabled(false);
             }
         });
         mFalseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v) {
                 checkAnswer(false);
+                mFalseButton.setEnabled(false);
             }
         });
         mNextButton.setOnClickListener(new View.OnClickListener(){
@@ -79,26 +82,50 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     private void updateQuestion(int i){
-        mCurrentIndex = (mCurrentIndex + i) % mQuestionBank.length;
+        resetButtons();
+        mCurrentIndex = (mCurrentIndex + i);
         if(mCurrentIndex < 0)
             mCurrentIndex = 0;
+        else if(mCurrentIndex > mQuestionBank.length - 1){
+            mCurrentIndex = 5;
+        }
         int question = mQuestionBank[mCurrentIndex].getTextResId();
         mQuestionTextView.setText(question);
     }
 
-    private void checkAnswer(boolean userPressedTue){
+    private void checkAnswer(boolean userPressedTue) {
         boolean answerIsTrue = mQuestionBank[mCurrentIndex].isAnswerTrue();
         int messageResId = 0;
+        String scoreString;
+        Toast toast = null;
 
-        if(userPressedTue == answerIsTrue){
-            messageResId = R.string.correct_toast;
+        if (mCurrentIndex == mQuestionBank.length - 1) {
+            if (userPressedTue == answerIsTrue)
+                scoreString = getString(R.string.score_toast, getString(R.string.correct_toast), calcScore(++scoreCounter));
+            else
+                scoreString = getString(R.string.score_toast, getString(R.string.incorrect_toast), calcScore(scoreCounter));
+            toast = Toast.makeText(this, scoreString, Toast.LENGTH_SHORT);
         }
-        else{
-            messageResId = R.string.incorrect_toast;
+        else {
+            if (userPressedTue == answerIsTrue) {
+                messageResId = R.string.correct_toast;
+                scoreCounter++;
+            } else {
+                scoreCounter--;
+                messageResId = R.string.incorrect_toast;
+            }
+            toast = Toast.makeText(this, messageResId,Toast.LENGTH_SHORT);
         }
-        Toast toast = Toast.makeText(this, messageResId,Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.TOP, 0,0);
         toast.show();
+    }
+    private int calcScore(int scoreCounter){
+        return scoreCounter / mQuestionBank.length * 100;
+    }
+
+    private void resetButtons(){
+        mTrueButton.setEnabled(true);
+        mFalseButton.setEnabled(true);
     }
 
     @Override

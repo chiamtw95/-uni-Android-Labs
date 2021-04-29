@@ -34,28 +34,33 @@
       <file leaf-file-name="QuizActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/geoquiz/QuizActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="48" column="73" lean-forward="true" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
+            <state relative-caret-position="339">
+              <caret line="128" column="5" lean-forward="true" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
               <folding>
-                <element signature="e#812#839#0" expanded="true" />
-                <element signature="e#873#897#0" expanded="true" />
-                <element signature="e#931#956#0" expanded="true" />
-                <element signature="e#991#1015#0" expanded="true" />
-                <element signature="e#1050#1076#0" expanded="true" />
-                <element signature="e#1110#1132#0" expanded="true" />
-                <element signature="e#2039#2040#0" expanded="true" />
-                <element signature="e#2082#2234#0" expanded="true" />
-                <element signature="e#2233#2234#0" expanded="true" />
-                <element signature="e#2277#2430#0" expanded="true" />
-                <element signature="e#2429#2430#0" expanded="true" />
-                <element signature="e#2472#2621#0" expanded="true" />
-                <element signature="e#2620#2621#0" expanded="true" />
-                <element signature="e#2667#2817#0" expanded="true" />
-                <element signature="e#2816#2817#0" expanded="true" />
-                <element signature="method#updateQuestion#0;class#QuizActivity#0" expanded="false" />
-                <element signature="method#checkAnswer#0;class#QuizActivity#0" expanded="false" />
-                <element signature="e#3348#3370#0" expanded="true" />
-                <element signature="e#3423#3447#0" expanded="true" />
+                <element signature="e#846#873#0" expanded="true" />
+                <element signature="e#907#931#0" expanded="true" />
+                <element signature="e#965#990#0" expanded="true" />
+                <element signature="e#1025#1049#0" expanded="true" />
+                <element signature="e#1084#1110#0" expanded="true" />
+                <element signature="e#1144#1166#0" expanded="true" />
+                <element signature="e#1923#2074#0" expanded="true" />
+                <element signature="e#2073#2074#0" expanded="true" />
+                <element signature="e#2116#2315#0" expanded="true" />
+                <element signature="e#2314#2315#0" expanded="true" />
+                <element signature="e#2358#2559#0" expanded="true" />
+                <element signature="e#2558#2559#0" expanded="true" />
+                <element signature="e#2601#2750#0" expanded="true" />
+                <element signature="e#2749#2750#0" expanded="true" />
+                <element signature="e#2796#2946#0" expanded="true" />
+                <element signature="e#2945#2946#0" expanded="true" />
+                <element signature="e#3699#3792#0" expanded="true" />
+                <element signature="e#3731#3764#0" expanded="true" />
+                <element signature="e#3841#3934#0" expanded="true" />
+                <element signature="e#3873#3908#0" expanded="true" />
+                <element signature="e#4117#4139#0" expanded="true" />
+                <element signature="e#4257#4281#0" expanded="true" />
+                <element signature="e#4497#4498#0" expanded="true" />
+                <element signature="e#4561#4562#0" expanded="true" />
                 <element signature="method#onSaveInstanceState#0;class#QuizActivity#0" expanded="false" />
                 <element signature="method#onStart#0;class#QuizActivity#0" expanded="false" />
                 <element signature="method#onStop#0;class#QuizActivity#0" expanded="false" />
@@ -63,6 +68,16 @@
                 <element signature="method#onPause#0;class#QuizActivity#0" expanded="false" />
                 <element signature="method#onResume#0;class#QuizActivity#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -2093,6 +2108,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/res/layout-land/activity_quiz.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/geoquiz/QuizActivity.java" />
       </list>
     </option>
@@ -2144,14 +2160,7 @@
               <item name="GeoQuiz" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="GeoQuiz" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-              <item name="activity_quiz" type="c431d0b8:AndroidResGroupNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
@@ -2361,7 +2370,7 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2383,7 +2392,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2393,25 +2402,30 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#812#839#0" expanded="true" />
-            <element signature="e#873#897#0" expanded="true" />
-            <element signature="e#931#956#0" expanded="true" />
-            <element signature="e#991#1015#0" expanded="true" />
-            <element signature="e#1050#1076#0" expanded="true" />
-            <element signature="e#1110#1132#0" expanded="true" />
-            <element signature="e#2039#2040#0" expanded="true" />
-            <element signature="e#2082#2234#0" expanded="true" />
-            <element signature="e#2233#2234#0" expanded="true" />
-            <element signature="e#2277#2430#0" expanded="true" />
-            <element signature="e#2429#2430#0" expanded="true" />
-            <element signature="e#2472#2621#0" expanded="true" />
-            <element signature="e#2620#2621#0" expanded="true" />
-            <element signature="e#2667#2817#0" expanded="true" />
-            <element signature="e#2816#2817#0" expanded="true" />
-            <element signature="method#updateQuestion#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#checkAnswer#0;class#QuizActivity#0" expanded="false" />
-            <element signature="e#3348#3370#0" expanded="true" />
-            <element signature="e#3423#3447#0" expanded="true" />
+            <element signature="e#846#873#0" expanded="true" />
+            <element signature="e#907#931#0" expanded="true" />
+            <element signature="e#965#990#0" expanded="true" />
+            <element signature="e#1025#1049#0" expanded="true" />
+            <element signature="e#1084#1110#0" expanded="true" />
+            <element signature="e#1144#1166#0" expanded="true" />
+            <element signature="e#1923#2074#0" expanded="true" />
+            <element signature="e#2073#2074#0" expanded="true" />
+            <element signature="e#2116#2315#0" expanded="true" />
+            <element signature="e#2314#2315#0" expanded="true" />
+            <element signature="e#2358#2559#0" expanded="true" />
+            <element signature="e#2558#2559#0" expanded="true" />
+            <element signature="e#2601#2750#0" expanded="true" />
+            <element signature="e#2749#2750#0" expanded="true" />
+            <element signature="e#2796#2946#0" expanded="true" />
+            <element signature="e#2945#2946#0" expanded="true" />
+            <element signature="e#3699#3792#0" expanded="true" />
+            <element signature="e#3731#3764#0" expanded="true" />
+            <element signature="e#3841#3934#0" expanded="true" />
+            <element signature="e#3873#3908#0" expanded="true" />
+            <element signature="e#4117#4139#0" expanded="true" />
+            <element signature="e#4257#4281#0" expanded="true" />
+            <element signature="e#4497#4498#0" expanded="true" />
+            <element signature="e#4561#4562#0" expanded="true" />
             <element signature="method#onSaveInstanceState#0;class#QuizActivity#0" expanded="false" />
             <element signature="method#onStart#0;class#QuizActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#QuizActivity#0" expanded="false" />
@@ -2438,8 +2452,8 @@
         <state relative-caret-position="240">
           <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
           <folding>
-            <element signature="e#1207#1228#0" expanded="true" />
-            <element signature="e#1571#1593#0" expanded="true" />
+            <element signature="e#1207#1228#0" expanded="false" />
+            <element signature="e#1571#1593#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2447,30 +2461,51 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/geoquiz/QuizActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="48" column="73" lean-forward="true" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
+        <state relative-caret-position="339">
+          <caret line="128" column="5" lean-forward="true" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
           <folding>
-            <element signature="e#812#839#0" expanded="true" />
-            <element signature="e#873#897#0" expanded="true" />
-            <element signature="e#931#956#0" expanded="true" />
-            <element signature="e#991#1015#0" expanded="true" />
-            <element signature="e#1050#1076#0" expanded="true" />
-            <element signature="e#1110#1132#0" expanded="true" />
-            <element signature="e#2039#2040#0" expanded="true" />
-            <element signature="e#2082#2234#0" expanded="true" />
-            <element signature="e#2233#2234#0" expanded="true" />
-            <element signature="e#2277#2430#0" expanded="true" />
-            <element signature="e#2429#2430#0" expanded="true" />
-            <element signature="e#2472#2621#0" expanded="true" />
-            <element signature="e#2620#2621#0" expanded="true" />
-            <element signature="e#2667#2817#0" expanded="true" />
-            <element signature="e#2816#2817#0" expanded="true" />
-            <element signature="method#updateQuestion#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#checkAnswer#0;class#QuizActivity#0" expanded="false" />
-            <element signature="e#3348#3370#0" expanded="true" />
-            <element signature="e#3423#3447#0" expanded="true" />
+            <element signature="e#846#873#0" expanded="true" />
+            <element signature="e#907#931#0" expanded="true" />
+            <element signature="e#965#990#0" expanded="true" />
+            <element signature="e#1025#1049#0" expanded="true" />
+            <element signature="e#1084#1110#0" expanded="true" />
+            <element signature="e#1144#1166#0" expanded="true" />
+            <element signature="e#1923#2074#0" expanded="true" />
+            <element signature="e#2073#2074#0" expanded="true" />
+            <element signature="e#2116#2315#0" expanded="true" />
+            <element signature="e#2314#2315#0" expanded="true" />
+            <element signature="e#2358#2559#0" expanded="true" />
+            <element signature="e#2558#2559#0" expanded="true" />
+            <element signature="e#2601#2750#0" expanded="true" />
+            <element signature="e#2749#2750#0" expanded="true" />
+            <element signature="e#2796#2946#0" expanded="true" />
+            <element signature="e#2945#2946#0" expanded="true" />
+            <element signature="e#3699#3792#0" expanded="true" />
+            <element signature="e#3731#3764#0" expanded="true" />
+            <element signature="e#3841#3934#0" expanded="true" />
+            <element signature="e#3873#3908#0" expanded="true" />
+            <element signature="e#4117#4139#0" expanded="true" />
+            <element signature="e#4257#4281#0" expanded="true" />
+            <element signature="e#4497#4498#0" expanded="true" />
+            <element signature="e#4561#4562#0" expanded="true" />
             <element signature="method#onSaveInstanceState#0;class#QuizActivity#0" expanded="false" />
             <element signature="method#onStart#0;class#QuizActivity#0" expanded="false" />
             <element signature="method#onStop#0;class#QuizActivity#0" expanded="false" />
