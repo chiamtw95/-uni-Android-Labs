@@ -5,60 +5,78 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".QuizActivity">
-    <!--<FrameLayout-->
-        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"></FrameLayout>-->
+
     <RelativeLayout
-        android:layout_width="579dp"
-        android:layout_height="551dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|center_horizontal"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <Button
-            android:id="@+id/true_button"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/false_button"
-            android:layout_toStartOf="@+id/false_button"
-            android:text="@string/true_button" />
-
-        <Button
-            android:id="@+id/false_button"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/question_text_view"
-            android:layout_marginBottom="217dp"
-            android:text="@string/false_button" />
-
-        <ImageButton
-            android:id="@+id/next_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="148dp"
-            android:layout_toEndOf="@+id/true_button"
-            android:src="@drawable/arrow_right" />
-
-        <ImageButton
-            android:id="@+id/previous_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/true_button"
-            android:layout_alignTop="@+id/next_button"
-            android:src="@drawable/arrow_left" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
             android:id="@+id/question_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="220dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
             android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question_text_view"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/true_button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/false_button"
+                android:layout_toEndOf="@+id/false_button"
+                android:text="@string/true_button" />
+
+            <Button
+                android:id="@+id/false_button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="96dp"
+                android:layout_toStartOf="@+id/question_text_view"
+                android:text="@string/false_button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="53dp">
+
+            <ImageButton
+                android:id="@+id/previous_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/false_button"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/arrow_left" />
+
+            <ImageButton
+                android:id="@+id/next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/previous_button"
+                android:layout_toEndOf="@+id/false_button"
+                android:src="@drawable/arrow_right" />
+
+
+
+
+        </LinearLayout>
+
+
     </RelativeLayout>
-</android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>

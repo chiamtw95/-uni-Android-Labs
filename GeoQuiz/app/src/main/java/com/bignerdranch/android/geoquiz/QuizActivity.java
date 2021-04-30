@@ -1,5 +1,6 @@
 package com.bignerdranch.android.geoquiz;
 
+import android.content.res.Resources;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,6 +22,7 @@ public class QuizActivity extends AppCompatActivity {
     private TextView mQuestionTextView;
     private int mCurrentIndex = 0;
     private int scoreCounter = 0;
+    private int score;
 
     private Question [] mQuestionBank = new Question[]{
             new Question(R.string.question_australia, true),
@@ -46,7 +48,7 @@ public class QuizActivity extends AppCompatActivity {
         mNextButton = (ImageButton) findViewById(R.id.next_button);
         mPreviousButton = (ImageButton) findViewById(R.id.previous_button);
         updateQuestion(0);
-
+        resetButtons();
         mQuestionTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,14 +59,14 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onClick (View v) {
                 checkAnswer(true);
-                mTrueButton.setEnabled(false);
+                disableButtons();
             }
         });
         mFalseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v) {
                 checkAnswer(false);
-                mFalseButton.setEnabled(false);
+                disableButtons();
             }
         });
         mNextButton.setOnClickListener(new View.OnClickListener(){
@@ -82,12 +84,14 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     private void updateQuestion(int i){
-        resetButtons();
-        mCurrentIndex = (mCurrentIndex + i);
-        if(mCurrentIndex < 0)
-            mCurrentIndex = 0;
-        else if(mCurrentIndex > mQuestionBank.length - 1){
-            mCurrentIndex = 5;
+
+        if(i > 0 && mCurrentIndex >= 0 && mCurrentIndex <=4){
+            mCurrentIndex = (mCurrentIndex + i);
+            resetButtons();
+        }
+        else if(i >0 && mCurrentIndex >= 1 && mCurrentIndex <=5){
+            mCurrentIndex = (mCurrentIndex + i);
+            resetButtons();
         }
         int question = mQuestionBank[mCurrentIndex].getTextResId();
         mQuestionTextView.setText(question);
@@ -98,34 +102,48 @@ public class QuizActivity extends AppCompatActivity {
         int messageResId = 0;
         String scoreString;
         Toast toast = null;
+        Resources res = getResources();
 
         if (mCurrentIndex == mQuestionBank.length - 1) {
-            if (userPressedTue == answerIsTrue)
-                scoreString = getString(R.string.score_toast, getString(R.string.correct_toast), calcScore(++scoreCounter));
+            if (userPressedTue == answerIsTrue) {
+                updateScore();
+                scoreString = String.format(res.getString(R.string.score_toast), getString(R.string.correct_toast), score);
+            }
             else
-                scoreString = getString(R.string.score_toast, getString(R.string.incorrect_toast), calcScore(scoreCounter));
+//                scoreString = getString(R.string.score_toast, getString(R.string.incorrect_toast), finalScore);
+                scoreString = String.format(res.getString(R.string.score_toast), getString(R.string.incorrect_toast), score);
             toast = Toast.makeText(this, scoreString, Toast.LENGTH_SHORT);
         }
         else {
             if (userPressedTue == answerIsTrue) {
                 messageResId = R.string.correct_toast;
-                scoreCounter++;
-            } else {
-                scoreCounter--;
-                messageResId = R.string.incorrect_toast;
+                updateScore();
             }
+            else
+                messageResId = R.string.incorrect_toast;
             toast = Toast.makeText(this, messageResId,Toast.LENGTH_SHORT);
         }
         toast.setGravity(Gravity.TOP, 0,0);
         toast.show();
     }
-    private int calcScore(int scoreCounter){
-        return scoreCounter / mQuestionBank.length * 100;
+
+    private void updateScore(){
+        scoreCounter = scoreCounter + 1;
+        score = (scoreCounter/mQuestionBank.length) * 100;
     }
 
     private void resetButtons(){
         mTrueButton.setEnabled(true);
         mFalseButton.setEnabled(true);
+        if(mCurrentIndex == 0 )
+            mPreviousButton.setEnabled(false);
+        if (mCurrentIndex == mQuestionBank.length - 1)
+            mNextButton.setEnabled(false);
+    }
+
+    private void disableButtons(){
+        mTrueButton.setEnabled(false);
+        mFalseButton.setEnabled(false);
     }
 
     @Override

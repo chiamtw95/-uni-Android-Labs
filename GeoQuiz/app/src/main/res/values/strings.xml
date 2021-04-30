@@ -15,5 +15,5 @@
     //toast strings
     <string name="correct_toast">Correct!</string>
     <string name="incorrect_toast">Incorrect!</string>
-    <string name="score_toast">%1$s. Your score is <b>%2$d</b></string>
+    <string name="score_toast">%1$s. Your score is %2$f%%</string>
 </resources>
