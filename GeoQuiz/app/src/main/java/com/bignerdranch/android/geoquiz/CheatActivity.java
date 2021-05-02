@@ -3,7 +3,6 @@ package com.bignerdranch.android.geoquiz;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,28 +12,16 @@ import android.widget.TextView;
 public class CheatActivity extends AppCompatActivity {
     private TextView mAnswerTextView;
     private Button mShowAnswerButton;
-    private boolean mAnswerIsTrue, mIsCheater;
-    private int REQUEST_CODE_CHEAT;
+    private boolean mAnswerIsTrue;
     private static final String
         EXTRA_ANSWER_IS_TRUE = "com.bignerdranch.android.geoquiz.answer_is_true",
         EXTRA_ANSWER_SHOWN = "com.bignerdranch.android.geoquiz.answer_shown";
 
 //methods
-    public static Intent newIntent(Context packageContext, boolean answerIsTrue){
+    public static Intent newIntent(Context packageContext, boolean answerIsTrue) {
         Intent intent = new Intent(packageContext, CheatActivity.class);
         intent.putExtra(EXTRA_ANSWER_IS_TRUE, answerIsTrue);
         return intent;
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(resultCode != Activity.RESULT_OK)
-            return;
-        if(requestCode == REQUEST_CODE_CHEAT){
-            if(data == null)
-                return;
-            mIsCheater =CheatActivity.wasAnswerShown(data);
-        }
     }
 
     @Override
@@ -44,7 +31,7 @@ public class CheatActivity extends AppCompatActivity {
 
         mAnswerIsTrue = getIntent().getBooleanExtra(EXTRA_ANSWER_IS_TRUE, false);
         mAnswerTextView = (TextView) findViewById(R.id.cheat_answer);
-        mShowAnswerButton = (Button) findViewById(R.id.cheat_button);
+        mShowAnswerButton = (Button) findViewById(R.id.show_answer_button);
 
         mShowAnswerButton.setOnClickListener(new View.OnClickListener() {
             @Override

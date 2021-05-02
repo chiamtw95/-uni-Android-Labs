@@ -1,8 +1,10 @@
 package com.bignerdranch.android.geoquiz;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -179,7 +181,7 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 boolean answerIsTrue = mQuestionBank[mCurrentIndex].isAnswerTrue();
-                Intent intent = new Intent(QuizActivity.this, CheatActivity.class);
+                Intent intent = CheatActivity.newIntent(QuizActivity.this, answerIsTrue);
                 startActivityForResult(intent, REQUEST_CODE_CHEAT);
             }
         });
@@ -211,6 +213,17 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(resultCode != Activity.RESULT_OK)
+            return;
+        if(requestCode == REQUEST_CODE_CHEAT){
+            if(data ==null)
+                return;
+            mIsCheater= CheatActivity.wasAnswerShown(data);
+        }
+    }
+
+    @Override
     protected void onStart() {
         super.onStart();
         Log.d(TAG, "onStart() called");
@@ -227,6 +240,7 @@ public class QuizActivity extends AppCompatActivity {
         super.onDestroy();
         Log.d(TAG, "onDestroy() called");
     }
+
 
     @Override
     protected void onPause() {
