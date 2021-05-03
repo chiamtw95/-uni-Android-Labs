@@ -62,9 +62,11 @@ public class QuizActivity extends AppCompatActivity {
         boolean answerIsTrue = mQuestionBank[mCurrentIndex].isAnswerTrue();
         String toastString;
 
-
         if(mIsCheater) {
-            toastString = getString(R.string.cheating_toast);
+            if(mCurrentIndex == mQuestionBank.length - 1)
+                toastString = String.format(this.getString(R.string.score_toast) , getString(R.string.cheating_toast), score);
+            else
+                toastString = getString(R.string.cheating_toast);
             makeToastAndShow(toastString);
             return;
         }
@@ -75,7 +77,7 @@ public class QuizActivity extends AppCompatActivity {
                 toastString = String.format(this.getString(R.string.score_toast), getString(R.string.correct_toast), getScore());
             }
             else
-                toastString = getString(R.string.score_toast, getString(R.string.incorrect_toast), score);
+                toastString = String.format(this.getString(R.string.score_toast), getString(R.string.incorrect_toast), score);
             makeToastAndShow(toastString);
         }
         else {
@@ -123,15 +125,6 @@ public class QuizActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
-        if(savedInstanceState != null) {
-            mCurrentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
-            scoreCounter = savedInstanceState.getInt("KEY_SCORECOUNTER", 0);
-            score = savedInstanceState.getFloat("KEY_SCORE", 0);
-            mIsCheater = savedInstanceState.getBoolean("KEY_MISCHEATER", false);
-
-            if (savedInstanceState.getBoolean("KEY_TRUEBUTTON_ENABLED") == false)
-                disableButtons();
-        }
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
         mTrueButton = (Button) findViewById(R.id.true_button);
         mFalseButton = (Button) findViewById(R.id.false_button);
@@ -204,14 +197,12 @@ public class QuizActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(Bundle savedInstanceState) {
         super.onSaveInstanceState(savedInstanceState);
-//        Log.i(TAG, "onSaveInstanceState: ");
+        Log.i(TAG, "onSaveInstanceState: ");
         savedInstanceState.putInt(KEY_INDEX, mCurrentIndex);
         savedInstanceState.putInt("KEY_SCORECOUNTER",scoreCounter);
         savedInstanceState.putFloat("KEY_SCORE",score);
         savedInstanceState.putBoolean("KEY_TRUEBUTTON_ENABLED", mTrueButton.isEnabled());
         savedInstanceState.putBoolean("KEY_MISCHEATER",mIsCheater);
-
-
     }
 
     @Override
@@ -226,34 +217,20 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onStart() {
-        super.onStart();
-        Log.d(TAG, "onStart() called");
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        if(savedInstanceState != null) {
+            mCurrentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
+            updateQuestion(0);
+            scoreCounter = savedInstanceState.getInt("KEY_SCORECOUNTER", 0);
+            score = savedInstanceState.getFloat("KEY_SCORE", 0);
+            mIsCheater = savedInstanceState.getBoolean("KEY_MISCHEATER", false);
+
+            if (savedInstanceState.getBoolean("KEY_TRUEBUTTON_ENABLED") == false)
+                disableButtons();
+        }
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.d(TAG, "onStop() called");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.d(TAG, "onDestroy() called");
-    }
-
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Log.d(TAG, "onPause() called");
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.d(TAG, "onResume() called");
-    }
 
 }

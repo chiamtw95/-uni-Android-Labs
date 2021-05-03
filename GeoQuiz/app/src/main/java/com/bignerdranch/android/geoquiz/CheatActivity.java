@@ -30,15 +30,6 @@ public class CheatActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cheat);
 
-        if(savedInstanceState != null){
-            mAnswerIsTrue = savedInstanceState.getBoolean(EXTRA_ANSWER_IS_TRUE,false);
-            showAnswer(mAnswerIsTrue);
-
-            isAnswerShown = savedInstanceState.getBoolean("KEY_ISANSWERSHOWN", false);
-            if(isAnswerShown)
-                setAnswerShownResult(isAnswerShown);
-        }
-
         mAnswerIsTrue = getIntent().getBooleanExtra(EXTRA_ANSWER_IS_TRUE, false);
         mAnswerTextView = (TextView) findViewById(R.id.cheat_answer);
         mShowAnswerButton = (Button) findViewById(R.id.show_answer_button);
@@ -56,6 +47,19 @@ public class CheatActivity extends AppCompatActivity {
         super.onSaveInstanceState(savedInstanceState);
         savedInstanceState.putBoolean(EXTRA_ANSWER_IS_TRUE, mAnswerIsTrue);
         savedInstanceState.putBoolean("KEY_ISANSWERSHOWN", isAnswerShown);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        if(savedInstanceState != null){
+            mAnswerIsTrue = savedInstanceState.getBoolean(EXTRA_ANSWER_IS_TRUE,false);
+            showAnswer(mAnswerIsTrue);
+
+            isAnswerShown = savedInstanceState.getBoolean("KEY_ISANSWERSHOWN", false);
+            if(isAnswerShown)
+                setAnswerShownResult(isAnswerShown);
+        }
     }
 
     public static boolean wasAnswerShown(Intent result){

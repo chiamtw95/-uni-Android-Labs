@@ -16,7 +16,7 @@
     //toast strings
     <string name="correct_toast">Correct!</string>
     <string name="incorrect_toast">Incorrect!</string>
-    <string name="score_toast">%1$s. Your score is %2$.2f%%</string>
+    <string name="score_toast">%1$s Your score is %2$.2f%%</string>
 
     //CheatActivity
     <string name="cheat_button">Cheat!</string>
