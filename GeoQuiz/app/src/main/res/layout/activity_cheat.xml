@@ -24,22 +24,21 @@
             android:layout_centerVertical="true"
             android:gravity="center"
             android:text="@string/cheat_warning" />
+
         <TextView
             android:id="@+id/cheat_answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/cheat_warning"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="237dp"
-            tools:text="Answer"/>
+            tools:text="Answer" />
 
         <Button
             android:id="@+id/show_answer_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/cheat_answer"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="177dp"
             android:text="@string/show_answer_button" />
 
 
