@@ -66,6 +66,7 @@ public class QuizActivity extends AppCompatActivity {
 
         mQuestionsAnswered++;
         mAnswered[mCurrentIndex] = true;
+        //dealing with a cheater
         if(mIsCheater) {
             if (userPressedTrue == answerIsTrue)
                 updateScore();
@@ -75,6 +76,7 @@ public class QuizActivity extends AppCompatActivity {
                 toastString = getString(R.string.cheating_toast);
             makeToastAndShow(toastString);
             cheatCounter++;
+            updateCheatTextView();
             return;
         }
         //Checks if at last question
@@ -104,6 +106,9 @@ public class QuizActivity extends AppCompatActivity {
         setScore(f);
     }
 
+    private void updateCheatTextView(){
+        mCheatTextView.setText(getString(R.string.cheat_textview,3-cheatCounter));
+    }
     private void resetButtons(){
         mTrueButton.setEnabled(true);
         mFalseButton.setEnabled(true);
@@ -114,7 +119,7 @@ public class QuizActivity extends AppCompatActivity {
 
         if(cheatCounter >= 3)
             mCheatButton.setEnabled(false);
-        mCheatTextView.setText(getString(R.string.cheat_textview,3-cheatCounter));
+        updateCheatTextView();
         if(mAnswered[mCurrentIndex] == true)
             disableButtons();
         if(mCurrentIndex == 0)
@@ -264,7 +269,7 @@ public class QuizActivity extends AppCompatActivity {
             mAnswered = savedInstanceState.getBooleanArray("KEY_MANSWERED");
             mQuestionsAnswered = savedInstanceState.getInt("KEY_MQUESTIONSANSWERED");
             cheatCounter = savedInstanceState.getInt("KEY_CHEATCOUNTER");
-            mCheatTextView.setText(getString(R.string.cheat_textview,cheatCounter));
+            updateCheatTextView();
             if (savedInstanceState.getBoolean("KEY_TRUEBUTTON_ENABLED") == false)
                 disableButtons();
         }
