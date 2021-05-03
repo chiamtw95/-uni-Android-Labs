@@ -16,8 +16,7 @@ import android.widget.Button;
 import android.view.View;
 
 public class QuizActivity extends AppCompatActivity {
-    public static final String TAG = "QuizActivity", KEY_INDEX = "index",
-            EXTRA_ANSWER_IS_TRUE = "index";
+    public static final String TAG = "QuizActivity", KEY_INDEX = "index";
     private static final int REQUEST_CODE_CHEAT = 0;
     private Button mTrueButton, mFalseButton, mResetButton, mCheatButton;
     private ImageButton mNextButton, mPreviousButton;
@@ -122,14 +121,15 @@ public class QuizActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(TAG, "onCreate(Bundle) called");
         setContentView(R.layout.activity_quiz);
 
         if(savedInstanceState != null) {
             mCurrentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
-            scoreCounter = savedInstanceState.getInt("scoreCounter", 0);
-            score = savedInstanceState.getFloat("score", 0);
-            if (savedInstanceState.getBoolean("trueButton") == false)
+            scoreCounter = savedInstanceState.getInt("KEY_SCORECOUNTER", 0);
+            score = savedInstanceState.getFloat("KEY_SCORE", 0);
+            mIsCheater = savedInstanceState.getBoolean("KEY_MISCHEATER", false);
+
+            if (savedInstanceState.getBoolean("KEY_TRUEBUTTON_ENABLED") == false)
                 disableButtons();
         }
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
@@ -204,11 +204,13 @@ public class QuizActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(Bundle savedInstanceState) {
         super.onSaveInstanceState(savedInstanceState);
-        Log.i(TAG, "onSaveInstanceState: ");
+//        Log.i(TAG, "onSaveInstanceState: ");
         savedInstanceState.putInt(KEY_INDEX, mCurrentIndex);
-        savedInstanceState.putInt("scoreCounter",scoreCounter);
-        savedInstanceState.putFloat("score",score);
-        savedInstanceState.putBoolean("trueButton", mTrueButton.isEnabled());
+        savedInstanceState.putInt("KEY_SCORECOUNTER",scoreCounter);
+        savedInstanceState.putFloat("KEY_SCORE",score);
+        savedInstanceState.putBoolean("KEY_TRUEBUTTON_ENABLED", mTrueButton.isEnabled());
+        savedInstanceState.putBoolean("KEY_MISCHEATER",mIsCheater);
+
 
     }
 

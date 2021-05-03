@@ -3,6 +3,7 @@ package com.bignerdranch.android.geoquiz;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +13,7 @@ import android.widget.TextView;
 public class CheatActivity extends AppCompatActivity {
     private TextView mAnswerTextView;
     private Button mShowAnswerButton;
-    private boolean mAnswerIsTrue;
+    private boolean mAnswerIsTrue, isAnswerShown;
     private static final String
         EXTRA_ANSWER_IS_TRUE = "com.bignerdranch.android.geoquiz.answer_is_true",
         EXTRA_ANSWER_SHOWN = "com.bignerdranch.android.geoquiz.answer_shown";
@@ -29,20 +30,32 @@ public class CheatActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cheat);
 
+        if(savedInstanceState != null){
+            mAnswerIsTrue = savedInstanceState.getBoolean(EXTRA_ANSWER_IS_TRUE,false);
+            showAnswer(mAnswerIsTrue);
+
+            isAnswerShown = savedInstanceState.getBoolean("KEY_ISANSWERSHOWN", false);
+            if(isAnswerShown)
+                setAnswerShownResult(isAnswerShown);
+        }
+
         mAnswerIsTrue = getIntent().getBooleanExtra(EXTRA_ANSWER_IS_TRUE, false);
         mAnswerTextView = (TextView) findViewById(R.id.cheat_answer);
         mShowAnswerButton = (Button) findViewById(R.id.show_answer_button);
-
         mShowAnswerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(mAnswerIsTrue)
-                    mAnswerTextView.setText(R.string.true_button);
-                else
-                    mAnswerTextView.setText(R.string.false_button);
+                showAnswer(mAnswerIsTrue);
                 setAnswerShownResult(true);
             }
         });
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putBoolean(EXTRA_ANSWER_IS_TRUE, mAnswerIsTrue);
+        savedInstanceState.putBoolean("KEY_ISANSWERSHOWN", isAnswerShown);
     }
 
     public static boolean wasAnswerShown(Intent result){
@@ -51,7 +64,15 @@ public class CheatActivity extends AppCompatActivity {
 
     private void setAnswerShownResult(boolean isAnswerShown){
         Intent data = new Intent();
+        this.isAnswerShown = isAnswerShown;
         data.putExtra(EXTRA_ANSWER_SHOWN, isAnswerShown);
-        setResult(RESULT_OK,data);
+        setResult(RESULT_OK, data);
+    }
+
+    private void showAnswer(boolean mAnswerIsTrue){
+        if(mAnswerIsTrue)
+            mAnswerTextView.setText(R.string.true_button);
+        else
+            mAnswerTextView.setText(R.string.false_button);
     }
 }
