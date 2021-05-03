@@ -13,20 +13,23 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/result_summary_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/results_button" />
 
         <Button
             android:id="@+id/reset_button"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
             android:text="@string/reset_button" />
-
-        <Button
-            android:id="@+id/cheat_button"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text="@string/cheat_button" />
 
         <TextView
             android:id="@+id/question_text_view"
@@ -35,40 +38,87 @@
             android:layout_centerInParent="true"
             android:gravity="center" />
 
-        <Button
-            android:id="@+id/true_button"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="205dp"
-            android:layout_toStartOf="@+id/next_button"
-            android:text="@string/true_button" />
-
-        <Button
-            android:id="@+id/false_button"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:layout_alignStart="@+id/next_button"
-            android:layout_alignTop="@+id/true_button"
-            android:text="@string/false_button" />
-
-
-        <ImageButton
-            android:id="@+id/next_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/previous_button"
-            android:layout_toEndOf="@+id/previous_button"
-            android:src="@drawable/arrow_right" />
-
-        <ImageButton
-            android:id="@+id/previous_button"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="147dp"
-            android:layout_toEndOf="@+id/cheat_button"
-            android:src="@drawable/arrow_left" />
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/true_button"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="199dp"
+                android:layout_toStartOf="@+id/question_text_view"
+                android:text="@string/true_button" />
+
+            <Button
+                android:id="@+id/false_button"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_alignStart="@+id/question_text_view"
+                android:layout_alignTop="@+id/true_button"
+                android:text="@string/false_button" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp">
+
+
+            <ImageButton
+                android:id="@+id/previous_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="140dp"
+                android:layout_toStartOf="@+id/question_text_view"
+                android:src="@drawable/arrow_left" />
+
+            <ImageButton
+                android:id="@+id/next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/question_text_view"
+                android:layout_alignTop="@+id/previous_button"
+                android:src="@drawable/arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="110dp">
+
+            <Button
+                android:id="@+id/cheat_button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cheat_button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="83dp">
+
+            <TextView
+                android:id="@+id/cheat_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cheat_textview" />
+        </LinearLayout>
+
+
 
 
     </RelativeLayout>

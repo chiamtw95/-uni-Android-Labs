@@ -4,6 +4,8 @@
     <string name="false_button">False</string>
     <string name="next_button">Next</string>
     <string name="reset_button">Reset Quiz</string>
+    <string name="results_button">Results Summary</string>
+    <string name="cheat_textview">You have %1$d cheats left.</string>
 
     //questions
     <string name="question_australia">Canberra is the capital of Australia.</string>
@@ -23,4 +25,10 @@
     <string name="cheat_warning">Are you sure you want to do this?</string>
     <string name="show_answer_button">Show Answer</string>
     <string name="cheating_toast">Cheating is wrong.</string>
+
+    //results summary
+    <string name="result_title">Results Summary</string>
+    <string name="results_questions_answered">Number of questions answered: %1$d</string>
+    <string name="results_score">Total score: %1$.2f%%</string>
+    <string name="results_cheats">Number of cheats used: %1$d</string>
 </resources>
