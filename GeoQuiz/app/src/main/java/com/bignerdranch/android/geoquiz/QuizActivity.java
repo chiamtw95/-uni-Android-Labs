@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.Button;
@@ -20,31 +21,22 @@ public class QuizActivity extends AppCompatActivity {
     public static final String TAG = "QuizActivity", KEY_INDEX = "index";
     private static final int REQUEST_CODE_CHEAT = 0,
                             REQUEST_RESULTS_SUMMARY = 1;
-    private Button mTrueButton, mFalseButton, mResetButton, mCheatButton, mResultsButton;
-    private ImageButton mNextButton, mPreviousButton;
-    private TextView mQuestionTextView, mCheatTextView;
-    private int mCurrentIndex = 0, scoreCounter = 0, cheatCounter = 0;
-    private float score = 0;
-    private boolean mIsCheater;
     private Question [] mQuestionBank = new Question[]{
             new Question(R.string.question_australia, true),
             new Question(R.string.question_oceans, true),
             new Question(R.string.question_mideast, false),
             new Question(R.string.question_africa, false),
             new Question(R.string.question_americas, true),
-            new Question(R.string.question_asia,true)
-    };
+            new Question(R.string.question_asia,true) };
+    private Button mTrueButton, mFalseButton, mResetButton, mCheatButton, mResultsButton;
+    private ProgressBar mProgressBar;
+    private ImageButton mNextButton, mPreviousButton;
+    private TextView mQuestionTextView, mCheatTextView;
+    private int mCurrentIndex = 0, mScoreCounter = 0, mCheatCounter = 0;
+    private float mScore = 0, mProgress = 0;
     private int mQuestionsAnswered = 0;
+    private boolean[] mIsCheater = new boolean[mQuestionBank.length];
     private boolean[] mAnswered = new boolean[mQuestionBank.length];
-    public float getScore() {
-        return score;
-    }
-
-    public void setScore(float score) {
-        this.score = score;
-    }
-
-
 
 
     private void updateQuestion(int i){
@@ -59,34 +51,35 @@ public class QuizActivity extends AppCompatActivity {
         resetButtons();
     }
 
-    @SuppressLint("StringFormatMatches")
     private void checkAnswer(boolean userPressedTrue) {
         boolean answerIsTrue = mQuestionBank[mCurrentIndex].isAnswerTrue();
         String toastString;
 
         mQuestionsAnswered++;
         mAnswered[mCurrentIndex] = true;
+        mProgress++;
+        setmProgressBar();
         //dealing with a cheater
-        if(mIsCheater) {
+        if(mIsCheater[mCurrentIndex]) {
             if (userPressedTrue == answerIsTrue)
                 updateScore();
-            if(mCurrentIndex == mQuestionBank.length - 1)
-                toastString = String.format(this.getString(R.string.score_toast) , getString(R.string.cheating_toast), score);
+            if(mProgress == mQuestionBank.length)
+                toastString = String.format(this.getString(R.string.score_toast) , getString(R.string.cheating_toast), mScore);
             else
                 toastString = getString(R.string.cheating_toast);
             makeToastAndShow(toastString);
-            cheatCounter++;
+            mCheatCounter++;
             updateCheatTextView();
             return;
         }
         //Checks if at last question
-        if(mCurrentIndex == mQuestionBank.length - 1) {
+        if(mProgress == mQuestionBank.length) {
             if (userPressedTrue == answerIsTrue) {
                 updateScore();
-                toastString = String.format(this.getString(R.string.score_toast), getString(R.string.correct_toast), getScore());
+                toastString = String.format(this.getString(R.string.score_toast), getString(R.string.correct_toast), mScore);
             }
             else
-                toastString = String.format(this.getString(R.string.score_toast), getString(R.string.incorrect_toast), score);
+                toastString = String.format(this.getString(R.string.score_toast), getString(R.string.incorrect_toast), mScore);
             makeToastAndShow(toastString);
         }
         else {
@@ -101,14 +94,14 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     private void updateScore(){
-        scoreCounter = scoreCounter + 1;
-        float f = (float) scoreCounter/(float) mQuestionBank.length * 100;
-        setScore(f);
+        mScoreCounter += 1;
+        mScore= (float) mScoreCounter/(float) mQuestionBank.length * 100;
     }
 
     private void updateCheatTextView(){
-        mCheatTextView.setText(getString(R.string.cheat_textview,3-cheatCounter));
+        mCheatTextView.setText(getString(R.string.cheat_textview,3 - mCheatCounter));
     }
+
     private void resetButtons(){
         mTrueButton.setEnabled(true);
         mFalseButton.setEnabled(true);
@@ -117,7 +110,7 @@ public class QuizActivity extends AppCompatActivity {
         mCheatButton.setEnabled(true);
 
 
-        if(cheatCounter >= 3)
+        if(mCheatCounter >= 3)
             mCheatButton.setEnabled(false);
         updateCheatTextView();
         if(mAnswered[mCurrentIndex] == true)
@@ -141,6 +134,21 @@ public class QuizActivity extends AppCompatActivity {
         toast.show();
     }
 
+    private void setmProgressBar(){
+        mProgressBar.setProgress((int) ((mProgress)/(float)mQuestionBank.length *100));
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(resultCode != Activity.RESULT_OK)
+            return;
+        if(requestCode == REQUEST_CODE_CHEAT){
+            if(data ==null)
+                return;
+            mIsCheater[mCurrentIndex] = CheatActivity.wasAnswerShown(data);
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -155,9 +163,11 @@ public class QuizActivity extends AppCompatActivity {
         mResultsButton = (Button) findViewById(R.id.result_summary_button);
         mNextButton = (ImageButton) findViewById(R.id.next_button);
         mPreviousButton = (ImageButton) findViewById(R.id.previous_button);
+        mProgressBar = (ProgressBar) findViewById(R.id.simpleProgressBar);
 
         updateQuestion(0);
         resetButtons();
+        setmProgressBar();
         mQuestionTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -185,13 +195,15 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mCurrentIndex = 0;
-                scoreCounter = 0;
-                score = 0;
+                mScoreCounter = 0;
+                mScore = 0;
                 mQuestionsAnswered = 0;
-                mIsCheater =false;
-                cheatCounter = 0;
+                mProgress = 0;
+                mIsCheater = new boolean[mQuestionBank.length];
+                mCheatCounter = 0;
                 mAnswered = new boolean[mQuestionBank.length];
                 updateQuestion(0);
+                setmProgressBar();
             }
         });
 
@@ -207,7 +219,6 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 updateQuestion(1);
-                mIsCheater = false;
             }
         });
 
@@ -223,8 +234,8 @@ public class QuizActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = ResultSummary.newIntent(QuizActivity.this,
                                                         mQuestionsAnswered,
-                                                        score,
-                                                        cheatCounter);
+                                                        mScore,
+                                                        mCheatCounter);
                 startActivityForResult(intent,REQUEST_RESULTS_SUMMARY);
             }
         });
@@ -235,24 +246,14 @@ public class QuizActivity extends AppCompatActivity {
         super.onSaveInstanceState(savedInstanceState);
         Log.i(TAG, "onSaveInstanceState: ");
         savedInstanceState.putInt(KEY_INDEX, mCurrentIndex);
-        savedInstanceState.putInt("KEY_SCORECOUNTER",scoreCounter);
-        savedInstanceState.putFloat("KEY_SCORE",score);
+        savedInstanceState.putInt("KEY_SCORECOUNTER",mScoreCounter);
+        savedInstanceState.putFloat("KEY_SCORE",mScore);
         savedInstanceState.putBoolean("KEY_TRUEBUTTON_ENABLED", mTrueButton.isEnabled());
-        savedInstanceState.putBoolean("KEY_MISCHEATER",mIsCheater);
+        savedInstanceState.putBooleanArray("KEY_MISCHEATER",mIsCheater);
         savedInstanceState.putBooleanArray("KEY_MANSWERED", mAnswered);
         savedInstanceState.putInt("KEY_MQUESTIONSANSWERED", mQuestionsAnswered);
-        savedInstanceState.putInt("KEY_CHEATCOUNTER", cheatCounter);
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(resultCode != Activity.RESULT_OK)
-            return;
-        if(requestCode == REQUEST_CODE_CHEAT){
-            if(data ==null)
-                return;
-            mIsCheater= CheatActivity.wasAnswerShown(data);
-        }
+        savedInstanceState.putInt("KEY_CHEATCOUNTER", mCheatCounter);
+        savedInstanceState.putFloat("KEY_MPROGRESS",mProgress);
     }
 
     @Override
@@ -263,12 +264,13 @@ public class QuizActivity extends AppCompatActivity {
             mCurrentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
             updateQuestion(0);
             resetButtons();
-            scoreCounter = savedInstanceState.getInt("KEY_SCORECOUNTER", 0);
-            score = savedInstanceState.getFloat("KEY_SCORE", 0);
-            mIsCheater = savedInstanceState.getBoolean("KEY_MISCHEATER", false);
+            mScoreCounter = savedInstanceState.getInt("KEY_SCORECOUNTER", 0);
+            mScore = savedInstanceState.getFloat("KEY_SCORE", 0);
+            mIsCheater = savedInstanceState.getBooleanArray("KEY_MISCHEATER");
             mAnswered = savedInstanceState.getBooleanArray("KEY_MANSWERED");
             mQuestionsAnswered = savedInstanceState.getInt("KEY_MQUESTIONSANSWERED");
-            cheatCounter = savedInstanceState.getInt("KEY_CHEATCOUNTER");
+            mCheatCounter = savedInstanceState.getInt("KEY_CHEATCOUNTER");
+            mProgress = savedInstanceState.getFloat("KEY_MPROGRESS");
             updateCheatTextView();
             if (savedInstanceState.getBoolean("KEY_TRUEBUTTON_ENABLED") == false)
                 disableButtons();

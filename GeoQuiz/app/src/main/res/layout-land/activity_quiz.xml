@@ -15,6 +15,18 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="111dp">
 
+        <ProgressBar
+            android:id="@+id/simpleProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="62dp"
+            android:max="100"
+            android:minHeight="50dp"
+            android:minWidth="200dp"
+            android:progress="1" />
         <TextView
             android:id="@+id/question_text_view"
             android:layout_width="wrap_content"
