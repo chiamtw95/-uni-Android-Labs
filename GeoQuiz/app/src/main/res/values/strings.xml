@@ -28,7 +28,7 @@
 
     //results summary
     <string name="result_title">Results Summary</string>
-    <string name="results_questions_answered">Number of questions answered: %1$d</string>
+    <string name="results_questions_answered">Number of questions answered: %1$d out of %2$d.</string>
     <string name="results_score">Total score: %1$.2f%%</string>
     <string name="results_cheats">Number of cheats used: %1$d</string>
 </resources>

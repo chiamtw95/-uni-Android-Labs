@@ -68,7 +68,6 @@ public class QuizActivity extends AppCompatActivity {
             else
                 toastString = getString(R.string.cheating_toast);
             makeToastAndShow(toastString);
-            mCheatCounter++;
             updateCheatTextView();
             return;
         }
@@ -99,6 +98,11 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     private void updateCheatTextView(){
+        mCheatCounter = 0;
+        for(int i=0; i<mIsCheater.length; i++) {
+            if (mIsCheater[i] == true)
+                mCheatCounter++;
+        }
         mCheatTextView.setText(getString(R.string.cheat_textview,3 - mCheatCounter));
     }
 
@@ -109,9 +113,10 @@ public class QuizActivity extends AppCompatActivity {
         mNextButton.setEnabled(true);
         mCheatButton.setEnabled(true);
 
-
-        if(mCheatCounter >= 3)
+        if(mCheatCounter >= 3 && mIsCheater[mCurrentIndex] == false)
             mCheatButton.setEnabled(false);
+        else
+            mCheatButton.setEnabled(true);
         updateCheatTextView();
         if(mAnswered[mCurrentIndex] == true)
             disableButtons();
@@ -146,6 +151,7 @@ public class QuizActivity extends AppCompatActivity {
             if(data ==null)
                 return;
             mIsCheater[mCurrentIndex] = CheatActivity.wasAnswerShown(data);
+            updateCheatTextView();
         }
     }
 
@@ -179,7 +185,8 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onClick (View v) {
                 checkAnswer(true);
-                disableButtons();
+//                disableButtons();
+                resetButtons();
             }
         });
 
@@ -187,7 +194,9 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onClick (View v) {
                 checkAnswer(false);
-                disableButtons();
+//                disableButtons();
+                resetButtons();
+
             }
         });
 
@@ -234,6 +243,7 @@ public class QuizActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = ResultSummary.newIntent(QuizActivity.this,
                                                         mQuestionsAnswered,
+                                                        mQuestionBank.length,
                                                         mScore,
                                                         mCheatCounter);
                 startActivityForResult(intent,REQUEST_RESULTS_SUMMARY);
@@ -263,7 +273,6 @@ public class QuizActivity extends AppCompatActivity {
         if(savedInstanceState != null) {
             mCurrentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
             updateQuestion(0);
-            resetButtons();
             mScoreCounter = savedInstanceState.getInt("KEY_SCORECOUNTER", 0);
             mScore = savedInstanceState.getFloat("KEY_SCORE", 0);
             mIsCheater = savedInstanceState.getBooleanArray("KEY_MISCHEATER");
@@ -271,7 +280,7 @@ public class QuizActivity extends AppCompatActivity {
             mQuestionsAnswered = savedInstanceState.getInt("KEY_MQUESTIONSANSWERED");
             mCheatCounter = savedInstanceState.getInt("KEY_CHEATCOUNTER");
             mProgress = savedInstanceState.getFloat("KEY_MPROGRESS");
-            updateCheatTextView();
+            resetButtons();
             if (savedInstanceState.getBoolean("KEY_TRUEBUTTON_ENABLED") == false)
                 disableButtons();
         }
