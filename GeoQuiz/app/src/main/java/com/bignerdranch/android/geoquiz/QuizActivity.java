@@ -118,8 +118,10 @@ public class QuizActivity extends AppCompatActivity {
         else
             mCheatButton.setEnabled(true);
         updateCheatTextView();
-        if(mAnswered[mCurrentIndex] == true)
+        if(mAnswered[mCurrentIndex] == true) {
             disableButtons();
+            mCheatButton.setEnabled(false);
+        }
         if(mCurrentIndex == 0)
             mPreviousButton.setEnabled(false);
         else if (mCurrentIndex == mQuestionBank.length - 1)
