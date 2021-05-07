@@ -215,7 +215,7 @@ public class QuizActivity extends AppCompatActivity {
                 mIsCheater = new boolean[mQuestionBank.length];
                 mCheatCounter = 0;
                 mAnswered = new boolean[mQuestionBank.length];
-                Collections.shuffle(Arrays.asList(mQuestionBank));
+                Question.shuffleQuestions(mQuestionBank);
                 updateQuestion(0);
                 setmProgressBar();
             }
