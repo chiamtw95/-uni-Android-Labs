@@ -165,7 +165,7 @@ public class QuizActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
-        Collections.shuffle(Arrays.asList(mQuestionBank));
+        Question.shuffleQuestions(mQuestionBank);
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
         mCheatTextView = (TextView) findViewById(R.id.cheat_textview);
         mTrueButton = (Button) findViewById(R.id.true_button);

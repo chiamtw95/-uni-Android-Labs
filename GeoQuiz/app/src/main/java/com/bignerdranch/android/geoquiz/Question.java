@@ -1,6 +1,8 @@
 package com.bignerdranch.android.geoquiz;
 
 import java.io.Serializable;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class Question implements Serializable {
     private int mTextResId;
@@ -25,6 +27,10 @@ public class Question implements Serializable {
 
     public void setAnswerTrue(boolean answerTrue) {
         mAnswerTrue = answerTrue;
+    }
+
+    public static void shuffleQuestions(Question[] mQuestionBank){
+        Collections.shuffle(Arrays.asList(mQuestionBank));
     }
 
 

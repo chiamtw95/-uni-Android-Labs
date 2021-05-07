@@ -53,26 +53,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="CheatActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/geoquiz/CheatActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-              <folding>
-                <element signature="method#onSaveInstanceState#0;class#CheatActivity#0" expanded="false" />
-                <element signature="method#onRestoreInstanceState#0;class#CheatActivity#0" expanded="false" />
-                <element signature="method#wasAnswerShown#0;class#CheatActivity#0" expanded="false" />
-                <element signature="method#showAnswer#0;class#CheatActivity#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="QuizActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/geoquiz/QuizActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="295" column="0" lean-forward="true" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
+            <state relative-caret-position="174">
+              <caret line="25" column="52" lean-forward="true" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
               <folding>
                 <element signature="method#updateQuestion#0;class#QuizActivity#0" expanded="false" />
                 <element signature="method#checkAnswer#0;class#QuizActivity#0" expanded="false" />
@@ -83,6 +68,9 @@
                 <element signature="method#makeToastAndShow#0;class#QuizActivity#0" expanded="false" />
                 <element signature="method#setmProgressBar#0;class#QuizActivity#0" expanded="false" />
                 <element signature="method#onActivityResult#0;class#QuizActivity#0" expanded="false" />
+                <element signature="method#onCreate#0;class#QuizActivity#0" expanded="false" />
+                <element signature="method#onSaveInstanceState#0;class#QuizActivity#0" expanded="false" />
+                <element signature="method#onRestoreInstanceState#0;class#QuizActivity#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -91,11 +79,12 @@
       <file leaf-file-name="Question.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/geoquiz/Question.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            <state relative-caret-position="696">
+              <caret line="32" column="58" lean-forward="false" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
               <folding>
-                <element signature="e#342#343#0" expanded="true" />
-                <element signature="e#375#376#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#397#398#0" expanded="true" />
+                <element signature="e#430#431#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2514,12 +2503,12 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2056928" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2056928" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25757575" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993015" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3986014" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2536,7 +2525,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="43" />
+      <option name="time" value="45" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2546,9 +2535,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#newIntent#0;class#CheatActivity#0" expanded="false" />
+            <element signature="method#onCreate#0;class#CheatActivity#0" expanded="false" />
             <element signature="method#onSaveInstanceState#0;class#CheatActivity#0" expanded="false" />
             <element signature="method#onRestoreInstanceState#0;class#CheatActivity#0" expanded="false" />
             <element signature="method#wasAnswerShown#0;class#CheatActivity#0" expanded="false" />
+            <element signature="method#setAnswerShownResult#0;class#CheatActivity#0" expanded="false" />
             <element signature="method#showAnswer#0;class#CheatActivity#0" expanded="false" />
           </folding>
         </state>
@@ -2559,9 +2551,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#newIntent#0;class#CheatActivity#0" expanded="false" />
+            <element signature="method#onCreate#0;class#CheatActivity#0" expanded="false" />
             <element signature="method#onSaveInstanceState#0;class#CheatActivity#0" expanded="false" />
             <element signature="method#onRestoreInstanceState#0;class#CheatActivity#0" expanded="false" />
             <element signature="method#wasAnswerShown#0;class#CheatActivity#0" expanded="false" />
+            <element signature="method#setAnswerShownResult#0;class#CheatActivity#0" expanded="false" />
             <element signature="method#showAnswer#0;class#CheatActivity#0" expanded="false" />
           </folding>
         </state>
@@ -2581,6 +2576,9 @@
             <element signature="method#makeToastAndShow#0;class#QuizActivity#0" expanded="false" />
             <element signature="method#setmProgressBar#0;class#QuizActivity#0" expanded="false" />
             <element signature="method#onActivityResult#0;class#QuizActivity#0" expanded="false" />
+            <element signature="method#onCreate#0;class#QuizActivity#0" expanded="false" />
+            <element signature="method#onSaveInstanceState#0;class#QuizActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#QuizActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2617,6 +2615,9 @@
             <element signature="method#makeToastAndShow#0;class#QuizActivity#0" expanded="false" />
             <element signature="method#setmProgressBar#0;class#QuizActivity#0" expanded="false" />
             <element signature="method#onActivityResult#0;class#QuizActivity#0" expanded="false" />
+            <element signature="method#onCreate#0;class#QuizActivity#0" expanded="false" />
+            <element signature="method#onSaveInstanceState#0;class#QuizActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#QuizActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2635,6 +2636,9 @@
             <element signature="method#makeToastAndShow#0;class#QuizActivity#0" expanded="false" />
             <element signature="method#setmProgressBar#0;class#QuizActivity#0" expanded="false" />
             <element signature="method#onActivityResult#0;class#QuizActivity#0" expanded="false" />
+            <element signature="method#onCreate#0;class#QuizActivity#0" expanded="false" />
+            <element signature="method#onSaveInstanceState#0;class#QuizActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#QuizActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2644,9 +2648,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="method#newIntent#0;class#CheatActivity#0" expanded="false" />
+            <element signature="method#onCreate#0;class#CheatActivity#0" expanded="false" />
             <element signature="method#onSaveInstanceState#0;class#CheatActivity#0" expanded="false" />
             <element signature="method#onRestoreInstanceState#0;class#CheatActivity#0" expanded="false" />
             <element signature="method#wasAnswerShown#0;class#CheatActivity#0" expanded="false" />
+            <element signature="method#setAnswerShownResult#0;class#CheatActivity#0" expanded="false" />
             <element signature="method#showAnswer#0;class#CheatActivity#0" expanded="false" />
           </folding>
         </state>
@@ -2666,6 +2673,9 @@
             <element signature="method#makeToastAndShow#0;class#QuizActivity#0" expanded="false" />
             <element signature="method#setmProgressBar#0;class#QuizActivity#0" expanded="false" />
             <element signature="method#onActivityResult#0;class#QuizActivity#0" expanded="false" />
+            <element signature="method#onCreate#0;class#QuizActivity#0" expanded="false" />
+            <element signature="method#onSaveInstanceState#0;class#QuizActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#QuizActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2777,19 +2787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/geoquiz/CheatActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding>
-            <element signature="method#onSaveInstanceState#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#onRestoreInstanceState#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#wasAnswerShown#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#showAnswer#0;class#CheatActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -2836,21 +2833,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/geoquiz/CheatActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <element signature="method#newIntent#0;class#CheatActivity#0" expanded="false" />
+            <element signature="method#onCreate#0;class#CheatActivity#0" expanded="false" />
+            <element signature="method#onSaveInstanceState#0;class#CheatActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#CheatActivity#0" expanded="false" />
+            <element signature="method#wasAnswerShown#0;class#CheatActivity#0" expanded="false" />
+            <element signature="method#setAnswerShownResult#0;class#CheatActivity#0" expanded="false" />
+            <element signature="method#showAnswer#0;class#CheatActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/geoquiz/Question.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state relative-caret-position="696">
+          <caret line="32" column="58" lean-forward="false" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
           <folding>
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/geoquiz/QuizActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="295" column="0" lean-forward="true" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
+        <state relative-caret-position="174">
+          <caret line="25" column="52" lean-forward="true" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
           <folding>
             <element signature="method#updateQuestion#0;class#QuizActivity#0" expanded="false" />
             <element signature="method#checkAnswer#0;class#QuizActivity#0" expanded="false" />
@@ -2861,6 +2875,9 @@
             <element signature="method#makeToastAndShow#0;class#QuizActivity#0" expanded="false" />
             <element signature="method#setmProgressBar#0;class#QuizActivity#0" expanded="false" />
             <element signature="method#onActivityResult#0;class#QuizActivity#0" expanded="false" />
+            <element signature="method#onCreate#0;class#QuizActivity#0" expanded="false" />
+            <element signature="method#onSaveInstanceState#0;class#QuizActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#QuizActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
