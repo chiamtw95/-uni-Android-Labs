@@ -17,6 +17,10 @@ import android.widget.Toast;
 import android.widget.Button;
 import android.view.View;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+
 public class QuizActivity extends AppCompatActivity {
     public static final String TAG = "QuizActivity", KEY_INDEX = "index";
     private static final int REQUEST_CODE_CHEAT = 0,
@@ -161,7 +165,7 @@ public class QuizActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
-
+        Collections.shuffle(Arrays.asList(mQuestionBank));
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
         mCheatTextView = (TextView) findViewById(R.id.cheat_textview);
         mTrueButton = (Button) findViewById(R.id.true_button);
@@ -187,7 +191,6 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onClick (View v) {
                 checkAnswer(true);
-//                disableButtons();
                 resetButtons();
             }
         });
@@ -196,7 +199,6 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onClick (View v) {
                 checkAnswer(false);
-//                disableButtons();
                 resetButtons();
 
             }
@@ -213,6 +215,7 @@ public class QuizActivity extends AppCompatActivity {
                 mIsCheater = new boolean[mQuestionBank.length];
                 mCheatCounter = 0;
                 mAnswered = new boolean[mQuestionBank.length];
+                Collections.shuffle(Arrays.asList(mQuestionBank));
                 updateQuestion(0);
                 setmProgressBar();
             }
@@ -266,6 +269,7 @@ public class QuizActivity extends AppCompatActivity {
         savedInstanceState.putInt("KEY_MQUESTIONSANSWERED", mQuestionsAnswered);
         savedInstanceState.putInt("KEY_CHEATCOUNTER", mCheatCounter);
         savedInstanceState.putFloat("KEY_MPROGRESS",mProgress);
+        savedInstanceState.putSerializable("KEY_MQUESTIONBANK", mQuestionBank);
     }
 
     @Override
@@ -273,6 +277,7 @@ public class QuizActivity extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
 
         if(savedInstanceState != null) {
+            mQuestionBank = (Question[]) savedInstanceState.getSerializable("KEY_MQUESTIONBANK");
             mCurrentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
             updateQuestion(0);
             mScoreCounter = savedInstanceState.getInt("KEY_SCORECOUNTER", 0);
