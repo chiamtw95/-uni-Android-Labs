@@ -10,16 +10,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ab26ae5-8ea4-44ef-a2e5-be2e5305a3f9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../.idea/gradle.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../.idea/runConfigurations.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/build.gradle" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/proguard-rules.pro" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/androidTest/java/com/bignerdranch/android/criminalintent/ExampleInstrumentedTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/main/AndroidManifest.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/main/java/com/bignerdranch/android/criminalintent/CrimeActivity.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/main/res/drawable-v24/ic_launcher_foreground.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/main/res/drawable/ic_launcher_background.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/main/res/layout/activity_crime.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/main/res/mipmap-hdpi/ic_launcher.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/main/res/mipmap-hdpi/ic_launcher_round.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/main/res/mipmap-mdpi/ic_launcher.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/main/res/mipmap-mdpi/ic_launcher_round.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/main/res/values/colors.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/main/res/values/strings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/main/res/values/styles.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../app/src/test/java/com/bignerdranch/android/criminalintent/ExampleUnitTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../build.gradle" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../gradle.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.jar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../gradlew" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../gradlew.bat" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../settings.gradle" />
+      <change beforePath="$PROJECT_DIR$/../.idea/androidappuni.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" afterPath="$PROJECT_DIR$/../.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" afterPath="$PROJECT_DIR$/../.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/geoquiz/QuizActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/geoquiz/QuizActivity.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,7 +84,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -2139,7 +2172,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="AndroidView" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -2153,82 +2186,43 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView">
         <subPane>
           <expand>
             <path>
-              <item name="GeoQuiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeoQuiz" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="GeoQuiz" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
             </path>
             <path>
-              <item name="GeoQuiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeoQuiz" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="GeoQuiz" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
-              <item name="GeoQuiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeoQuiz" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="GeoQuiz" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="geoquiz" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
             <path>
-              <item name="GeoQuiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeoQuiz" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="GeoQuiz" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
-              <item name="GeoQuiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeoQuiz" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeoQuiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeoQuiz" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="geoquiz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeoQuiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeoQuiz" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeoQuiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeoQuiz" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GeoQuiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GeoQuiz" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="values" type="462c0819:PsiDirectoryNode" />
+              <item name="GeoQuiz" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2237,7 +2231,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="device.picker.selection" value="Nexus_5X_API_28" />
     <property name="android.profiler.active" value="true" />
-    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.last.selected" value="Project" />
     <property name="android.project.structure.proportion" value="0.15" />
   </component>
   <component name="RecentsManager">
@@ -2448,14 +2442,13 @@
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
     <layout>
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32945284" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44307196" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983682" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -2463,20 +2456,21 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2056928" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2056928" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25757575" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3986014" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44307196" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2494,15 +2488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#newIntent#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#onSaveInstanceState#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#onRestoreInstanceState#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#wasAnswerShown#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#setAnswerShownResult#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#showAnswer#0;class#CheatActivity#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2510,15 +2495,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#newIntent#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#onSaveInstanceState#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#onRestoreInstanceState#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#wasAnswerShown#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#setAnswerShownResult#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#showAnswer#0;class#CheatActivity#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2526,37 +2502,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="method#updateQuestion#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#checkAnswer#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#updateScore#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#updateCheatTextView#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#resetButtons#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#disableButtons#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#makeToastAndShow#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#setmProgressBar#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#onActivityResult#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#onSaveInstanceState#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#onRestoreInstanceState#0;class#QuizActivity#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1590">
           <caret line="106" column="18" lean-forward="false" selection-start-line="106" selection-start-column="18" selection-end-line="106" selection-end-column="18" />
-          <folding>
-            <element signature="e#2770#2792#0" expanded="false" />
-            <element signature="e#3138#3162#0" expanded="false" />
-            <element signature="e#4177#4198#0" expanded="false" />
-            <element signature="e#4397#4419#0" expanded="false" />
-            <element signature="e#6178#6200#0" expanded="false" />
-            <element signature="e#6798#6822#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/geoquiz/QuizActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -2564,39 +2526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#updateQuestion#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#checkAnswer#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#updateScore#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#updateCheatTextView#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#resetButtons#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#disableButtons#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#makeToastAndShow#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#setmProgressBar#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#onActivityResult#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#onSaveInstanceState#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#onRestoreInstanceState#0;class#QuizActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bignerdranch/android/geoquiz/QuizActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#updateQuestion#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#checkAnswer#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#updateScore#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#updateCheatTextView#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#resetButtons#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#disableButtons#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#makeToastAndShow#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#setmProgressBar#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#onActivityResult#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#onSaveInstanceState#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#onRestoreInstanceState#0;class#QuizActivity#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2604,15 +2533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#newIntent#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#onSaveInstanceState#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#onRestoreInstanceState#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#wasAnswerShown#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#setAnswerShownResult#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#showAnswer#0;class#CheatActivity#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2620,41 +2540,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1276">
           <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
-          <folding>
-            <element signature="method#updateQuestion#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#checkAnswer#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#updateScore#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#updateCheatTextView#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#resetButtons#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#disableButtons#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#makeToastAndShow#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#setmProgressBar#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#onActivityResult#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#onSaveInstanceState#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#onRestoreInstanceState#0;class#QuizActivity#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cheat.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1044">
           <caret line="36" column="36" lean-forward="false" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-          <folding>
-            <element signature="e#1122#1145#0" expanded="false" />
-            <element signature="e#2614#2642#0" expanded="false" />
-          </folding>
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2663,113 +2565,85 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
           <caret line="18" column="50" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/custom_progress.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-land/activity_quiz.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1612">
           <caret line="128" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
-          <folding>
-            <element signature="e#2626#2648#0" expanded="false" />
-            <element signature="e#2994#3018#0" expanded="false" />
-            <element signature="e#4033#4054#0" expanded="false" />
-            <element signature="e#4253#4275#0" expanded="false" />
-            <element signature="e#6032#6054#0" expanded="false" />
-            <element signature="e#6652#6676#0" expanded="false" />
-          </folding>
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-land/activity_cheat.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-129">
           <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding>
-            <element signature="e#1085#1108#0" expanded="false" />
-            <element signature="e#2613#2641#0" expanded="false" />
-          </folding>
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_result_summary.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="44" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="76" selection-end-column="46" />
-          <folding>
-            <element signature="e#1054#1076#0" expanded="false" />
-            <element signature="e#1758#1794#0" expanded="false" />
-            <element signature="e#2392#2415#0" expanded="false" />
-            <element signature="e#3002#3026#0" expanded="false" />
-          </folding>
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-land/activity_result_summary.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-          <folding>
-            <element signature="e#1054#1076#0" expanded="false" />
-            <element signature="e#1721#1757#0" expanded="false" />
-            <element signature="e#2391#2414#0" expanded="false" />
-            <element signature="e#3001#3025#0" expanded="false" />
-          </folding>
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_quiz.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1009">
           <caret line="126" column="24" lean-forward="true" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cheat.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_cheat.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="46" />
-          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="10" column="79" lean-forward="false" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2777,7 +2651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
           <caret line="40" column="121" lean-forward="false" selection-start-line="40" selection-start-column="121" selection-end-line="40" selection-end-column="121" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2785,7 +2658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="134" column="21" lean-forward="false" selection-start-line="134" selection-start-column="21" selection-end-line="134" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2793,15 +2665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="754">
           <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding>
-            <element signature="method#newIntent#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#onSaveInstanceState#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#onRestoreInstanceState#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#wasAnswerShown#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#setAnswerShownResult#0;class#CheatActivity#0" expanded="false" />
-            <element signature="method#showAnswer#0;class#CheatActivity#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2809,19 +2672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
           <caret line="213" column="30" lean-forward="true" selection-start-line="213" selection-start-column="30" selection-end-line="213" selection-end-column="30" />
-          <folding>
-            <element signature="method#updateQuestion#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#checkAnswer#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#updateScore#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#updateCheatTextView#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#resetButtons#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#disableButtons#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#makeToastAndShow#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#setmProgressBar#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#onActivityResult#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#onSaveInstanceState#0;class#QuizActivity#0" expanded="false" />
-            <element signature="method#onRestoreInstanceState#0;class#QuizActivity#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2829,11 +2679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="696">
           <caret line="32" column="58" lean-forward="false" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
